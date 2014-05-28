@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta charset="utf-8" />
+<title>TATCO - Gestão de Transportadoras</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta content="" name="TATCO - Gestão de Transportadoras" />
+<meta content="" name="MLN Consultoria & Ubiq42 Projetos" />
+
+<!-- FAVICON -->
+<link rel="icon" 
+      type="image/ico" 
+      href="favicon3.ico" />
+	  
+<!-- BEGIN PLUGIN CSS -->
+<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/bootstrap-tag/bootstrap-tagsinput.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/dropzone/css/dropzone.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" type="text/css" />
+<link href="assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.css" rel="stylesheet" type="text/css" />
+<link href="assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" type="text/css" />
+<link href="assets/plugins/ios-switch/ios7-switch.css" rel="stylesheet" type="text/css" media="screen">
+<link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/jquery-slider/css/jquery.sidr.light.css" rel="stylesheet" type="text/css" media="screen"/>
+<!-- END PLUGIN CSS -->
+
+<!-- BEGIN CORE CSS FRAMEWORK -->
+<link href="assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css"/>
+<!-- END CORE CSS FRAMEWORK -->
+
+<!-- BEGIN CSS TEMPLATE -->
+<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/custom-icon-set.css" rel="stylesheet" type="text/css"/>
+<!-- END CSS TEMPLATE -->
+
+<link href="assets/plugins/boostrap-slider/css/slider.css" rel="stylesheet" type="text/css"/>
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+<body class="">
+<!-- BEGIN HEADER -->
+<div class="header navbar navbar-inverse "> 
+  <!-- BEGIN TOP NAVIGATION BAR -->
+  <div class="navbar-inner">
+	<div class="header-seperation"> 
+		<ul class="nav pull-left notifcation-center" id="main-menu-toggle-wrapper" style="display:none">	
+		 <li class="dropdown"> <a id="main-menu-toggle" href="#main-menu"  class="" > <div class="iconset top-menu-toggle-white"></div> </a> </li>		 
+		</ul>
+      <!-- BEGIN LOGO -->	
+      <a href="index.html"><img src="assets/img/logo.png" class="logo" style="margin:3px auto auto 15px;" alt=""  data-src="assets/img/logo.png" data-src-retina="assets/img/logo2x.png" /></a>
+      <!-- END LOGO --> 
+      <ul class="nav pull-right notifcation-center">	
+        <li class="dropdown" id="header_task_bar"> <a href="index.html" class="dropdown-toggle active" data-toggle=""> <div class="iconset top-home"></div> </a> </li>
+        <li class="dropdown" id="header_inbox_bar" > <a href="meusavisos.html" class="dropdown-toggle" > <div class="iconset top-messages"></div>  <span class="badge" id="msgs-badge">2</span> </a></li>
+		<li class="dropdown" id="portrait-chat-toggler" style="display:none"> <a href="#sidr" class="chat-menu-toggle"> <div class="iconset top-chat-white "></div> </a> </li>        
+      </ul>
+      </div>
+      <!-- END RESPONSIVE MENU TOGGLER --> 
+      <div class="header-quick-nav" > 
+      <!-- BEGIN TOP NAVIGATION MENU -->
+	  <div class="pull-left"> 
+        <ul class="nav quick-section">
+          <li class="quicklinks"> <a href="#" class="" id="layout-condensed-toggle" >
+            <div class="iconset top-menu-toggle-dark"></div>
+            </a> </li>
+        </ul>
+        <ul class="nav quick-section">
+          <li class="quicklinks"> <a href="#" class="" >
+            <div class="iconset top-reload"></div>
+            </a> </li>
+          <li class="quicklinks"> <span class="h-seperate"></span></li>
+          <li class="quicklinks"> <a href="#" class="" >
+            <div class="iconset top-tiles"></div>
+            </a> </li>
+			<li class="search-form">
+				&nbsp;&nbsp;<img src="assets/img/logo-tatco.png" alt="" data-src="assets/img/logo-tatco.png" data-src-retina="assets/img/logo-tatco.png"  />
+			</li>
+		</ul>
+	  </div>
+	 <!-- END TOP NAVIGATION MENU -->
+	 <!-- BEGIN CHAT TOGGLER -->
+      <div class="pull-right"> 
+		<div class="chat-toggler">	
+				<a href="#" class="dropdown-toggle" id="my-task-list" data-placement="bottom"  data-content='' data-toggle="dropdown" data-original-title="Comunicação">
+					<div class="user-details"> 
+						<div class="username">
+							<span class="badge badge-important">3</span> 
+							Márcio <span class="bold">Neves</span>									
+						</div>						
+					</div> 
+					<div class="iconset top-down-arrow"></div>
+				</a>	
+				<div id="notification-list" style="display:none">
+					<div style="width:300px">
+						  <div class="notification-messages info">
+									<div class="user-profile">
+										<img src="assets/img/profiles/d.jpg"  alt="" data-src="assets/img/profiles/d.jpg" data-src-retina="assets/img/profiles/d2x.jpg" width="35" height="35">
+									</div>
+									<div class="message-wrapper">
+										<div class="heading">
+											Marcelo Freiser - Recado para você
+										</div>
+										<div class="description">
+											Reunião agendada para dia 12/03
+										</div>
+										<div class="date pull-left">
+										Um minuto atrás
+										</div>										
+									</div>
+									<div class="clearfix"></div>									
+								</div>	
+							<div class="notification-messages danger">
+								<div class="iconholder">
+									<i class="icon-warning-sign"></i>
+								</div>
+								<div class="message-wrapper">
+									<div class="heading">
+										Vale Cargas
+									</div>
+									<div class="description">
+										O Tempo de Rota está crítico
+									</div>
+									<div class="date pull-left">
+									2 minutos atrás
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>	
+							<div class="notification-messages success">
+								<div class="user-profile">
+									<img src="assets/img/profiles/h.jpg"  alt="" data-src="assets/img/profiles/h.jpg" data-src-retina="assets/img/profiles/h2x.jpg" width="35" height="35">
+								</div>
+								<div class="message-wrapper">
+									<div class="heading">
+										Simone - Comercial
+									</div>
+									<div class="description">
+										3 novas transportadoras foram agregadas
+									</div>
+									<div class="date pull-left">
+									Uma hora atrás
+									</div>									
+								</div>
+								<div class="clearfix"></div>
+							</div>							
+						</div>				
+				</div>
+      			
+			</div>
+		 <ul class="nav quick-section ">
+			<li class="quicklinks"> 
+				<a data-toggle="dropdown" class="dropdown-toggle  pull-right " href="#" id="user-options">						
+					<div class="iconset top-settings-dark "></div> 	
+				</a>
+				<ul class="dropdown-menu  pull-right" role="menu" aria-labelledby="user-options">
+                  <li><a href="user-profile.html"> Meus Dados</a>
+                  </li>
+                  <li><a href="calender.html">Minha Agenda</a>
+                  </li>
+                  <li><a href="meusavisos.html"> Meus Avisos&nbsp;&nbsp;<span class="badge badge-important animated bounceIn">2</span></a>
+                  </li>
+                  <li class="divider"></li>                
+                  <li><a href="login.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+               </ul>
+			</li> 
+
+		</ul>
+      </div>
+	  
+	<!-- END CHAT TOGGLER -->
+      </div> 
+      <!-- END TOP NAVIGATION MENU --> 
+   
+  </div>
+  <!-- END TOP NAVIGATION BAR --> 
+</div>
+
+<!-- END HEADER --> 
+<!-- BEGIN CONTAINER -->
+<div class="page-container row"> 
+  <!-- BEGIN SIDEBAR -->
+  <div class="page-sidebar" id="main-menu"> 
+  <!-- BEGIN MINI-PROFILE -->
+   <div class="user-info-wrapper" style="margin:0;">	
+	<div class="profile-wrapper" style="margin-top:0; width:247px;">
+		<img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" />
+ 	</div>
+   </div>
+  <!-- END MINI-PROFILE -->
+   
+   <!-- BEGIN SIDEBAR MENU -->	
+	<p class="menu-title">MENU <span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
+    <ul>	
+      <li class="start active "> <a href="index.html"> <i class="icon-custom-home"></i> <span class="title">Dashboard</span> <span class="selected"></span> <span class="badge badge-important pull-right">5</span></a> </li>
+	  <li class=""> <a href="avisos.html"> <i class="fa fa-envelope"></i> <span class="title">Comunicação</span>  <span class=" badge badge-disable pull-right ">15</span></a> </li>      
+	  <li class=""> <a href="usuarios.html"> <i class="fa fa-user"></i>  <span class="title">Cadastro de Usuários</span></a></li>
+      <li class=""> <a href="javascript:;"> <i class="fa fa-edit"></i> <span class="title">Cadastro Geral</span> <span class="arrow open"></span> </a>
+	  <ul class="sub-menu">
+		  <li > <a href="frota.html">Frota</a> </li>
+		  <li > <a href="pessoal.html">Pessoal</a> </li>
+        </ul>
+      </li>
+	  <li class=""> <a href="avaliacao.html"> <i class="fa fa-check-square-o"></i> <span class="title">Autoavaliação</span></a></li>
+      <li class=""> <a href="input.html"> <i class="fa fa-info-circle"></i> <span class="title">Input de Informações</span> </a></li>
+      <li class=""> <a href="remuneracao.html"> <i class="fa fa-random"></i> <span class="title">Remuneração Variável</span> </a></li>
+      <li class=""> <a href="javascript:;"> <i class="icon-custom-map"></i> <span class="title">Indicadores</span> <span class="arrow open"></span> </a>
+        <ul class="sub-menu" >
+          <li > <a href="rhssma.html"> RH & SSMA </a> </li>
+          <li > <a href="produtividade.html"> Produtividade </a> </li>
+          <li > <a href="financeiros.html"> Financeiros </a> </li>
+        </ul>
+      </li>
+      <li class=""> <a href="gvista.html"> <i class="icon-custom-thumb"></i> <span class="title">Gestão à Vista</span> </a> </li>    
+	  <li class=""> <a href="categorias.html"> <i class="fa fa-tasks"></i> <span class="title">Categorias GIF</span></a></li>
+    </ul>
+
+	<a href="#" class="scrollup">Scroll</a>
+	<div class="clearfix"></div>
+    <!-- END SIDEBAR MENU --> 
+  </div>
+  <div class="footer-widget">		
+
+	<div class="pull-right">
+
+	<a href="lockscreen.html"><i class="fa fa-power-off"></i></a></div>
+  </div>
+  <!-- END SIDEBAR --> 
+  <!-- BEGIN PAGE CONTAINER-->
+  <div class="page-content">
+    <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <div id="portlet-config" class="modal hide">
+      <div class="modal-header">
+        <button data-dismiss="modal" class="close" type="button"></button>
+        <h3>Configurar Dispositivo</h3>
+      </div>
+      <div class="modal-body"> Coloque aqui o formulário de Configuração do Dispositivo </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="content">
+	  
+
+      <ul class="breadcrumb">
+        <li>
+          VOCÊ ESTÁ AQUI&nbsp;&nbsp;
+        </li>
+		<li>
+			&nbsp;&nbsp; Indicadores &nbsp;&nbsp;
+        </li>
+        <li><a href="#" class="active">Produtividade</a> </li>
+      </ul>
+      <div class="page-title"> <i class="fa fa-rocket"></i>
+        <h3>INDICADORES - <span class="semi-bold">Produtividade</span></h3>
+      </div>
+	  
+		<!-- INICIAR O CONTEÚDO DA PÁGINA --> 
+		
+		<conteúdo>
+		
+		
+		<!-- FINALIZAR O CONTEÚDO DA PÁGINA --> 
+	  
+      <!-- END PAGE -->
+    </div>
+  </div>
+</div>
+
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<!-- END FOOTER -->
+<!-- BEGIN CORE JS FRAMEWORK-->
+<script src="assets/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/plugins/breakpoints.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+
+<!-- END CORE JS FRAMEWORK -->
+<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-slider/jquery.sidr.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script> 
+<!-- END CORE PLUGINS -->
+
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-block-ui/jqueryblockui.js" type="text/javascript"></script> 
+<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+<script src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
+<script src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-inputmask/jquery.inputmask.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-autonumeric/autoNumeric.js" type="text/javascript"></script>
+<script src="assets/plugins/ios-switch/ios7-switch.js" type="text/javascript"></script>
+<script src="assets/plugins/bootstrap-select2/select2.min.js" type="text/javascript"></script>
+<script src="assets/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js" type="text/javascript"></script>
+<script src="assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js" type="text/javascript"></script>
+<script src="assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js" type="text/javascript"></script>
+<script src="assets/plugins/dropzone/dropzone.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<script src="assets/js/form_elements.js" type="text/javascript"></script>
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="assets/js/core.js" type="text/javascript"></script>
+<script src="assets/js/chat.js" type="text/javascript"></script> 
+<script src="assets/js/demo.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- END JAVASCRIPTS -->
+</body>
+</html>

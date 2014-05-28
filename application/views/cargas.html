@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>ControlCargo - Gestão Inteligente de Logística</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- BEGIN PLUGIN CSS -->
+    <link href="assets/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/plugins/jquery-ricksaw-chart/css/rickshaw.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/plugins/jquery-morris-chart/css/morris.css" type="text/css" media="screen">
+    <link href="assets/plugins/jquery-slider/css/jquery.sidr.light.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/jquery-jvectormap/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/boostrap-checkbox/css/bootstrap-checkbox.css" rel="stylesheet" type="text/css" media="screen" />
+    <!-- END PLUGIN CSS -->
+
+    <!-- BEGIN CORE CSS FRAMEWsORK -->
+    <link href="assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <!-- END CORE CSS FRAMEWORK -->
+
+    <!-- BEGIN CSS TEMPLATE -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom-icon-set.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/retina.css" rel="stylesheet" type="text/css" />
+    <!-- END CSS TEMPLATE -->
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="">
+    <!-- BEGIN HEADER -->
+    <div class="header navbar navbar-inverse ">
+        <!-- BEGIN TOP NAVIGATION BAR -->
+        <div class="navbar-inner">
+            <div class="header-seperation">
+                <ul class="nav pull-left notifcation-center" id="main-menu-toggle-wrapper" style="display:none">
+                    <li class="dropdown">
+                        <a id="main-menu-toggle" href="#main-menu" class="">
+                            <div class="iconset top-menu-toggle-white"></div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- BEGIN LOGO -->
+                <a href="index.html">
+                    <img src="assets/img/logo.png" class="logo" alt="" data-src="assets/img/logo.png" data-src-retina="assets/img/logo2x.png" width="160" height="17" />
+                </a>
+                <!-- END LOGO -->
+                <ul class="nav pull-right notifcation-center">
+                    <li class="dropdown" id="header_task_bar">
+                        <a href="index.html" class="dropdown-toggle active" data-toggle="">
+                            <div class="iconset top-home"></div>
+                        </a>
+                    </li>
+                    <li class="dropdown" id="portrait-chat-toggler" style="display:none">
+                        <a href="#sidr" class="chat-menu-toggle">
+                            <div class="iconset top-chat-white "></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <div class="header-quick-nav">
+                <!-- BEGIN TOP NAVIGATION MENU -->
+                <div class="pull-left">
+                    <ul class="nav quick-section">
+                        <li class="quicklinks">
+                            <a href="#" class="" id="layout-condensed-toggle">
+                                <div class="iconset top-menu-toggle-dark"></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav quick-section">
+                        <li class="quicklinks">
+                            <a href="#" class="">
+                                <div class="iconset top-reload"></div>
+                            </a>
+                        </li>
+                        <li class="quicklinks">
+                            <span class="h-seperate"></span>
+                        </li>
+                        <li class="m-r-10 input-prepend inside search-form no-boarder">
+                            <span class="add-on">
+                                <span class="iconset top-search"></span>
+                            </span>
+                            <input name="" type="text" class="no-boarder " placeholder="Procurar na Dashboard" style="width:250px;">
+                        </li>
+                    </ul>
+                </div>
+                <!-- END TOP NAVIGATION MENU -->
+                <!-- BEGIN CHAT TOGGLER -->
+                <div class="pull-right">
+                    <div class="chat-toggler">
+                        <a href="#" class="dropdown-toggle" id="my-task-list" data-placement="bottom" data-content='' data-toggle="dropdown" data-original-title="Notifications">
+                            <!-- Notificações, Perfil & Avatar -->
+                            <div class="user-details" style="margin-right:5px">
+                                <div class="username">
+                                    <!--Número de Notificações & Nome -->
+                                    <span class="badge badge-important">3</span>
+                                    Victor
+                                    <span class="bold">Sanches</span>
+                                </div>
+                            </div>
+                            <!-- Avatar do Usuário -->
+                            <div class="profile-pic">
+                                <img src="assets/img/profiles/avatar_small.jpg" alt="" data-src="assets/img/profiles/avatar_small.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="" height="35" />
+                            </div>
+                            <div class="iconset top-down-arrow"></div>
+                        </a>
+
+                        <!-- Dropdown Notificações -->
+                        <div id="notification-list" style="display:none">
+                            <div style="width:300px">
+                                <!-- Notifacação de Mensagem -->
+                                <div class="notification-messages info">
+                                    <div class="user-profile">
+                                        <img src="assets/img/profiles/d.jpg" alt="" data-src="assets/img/profiles/d.jpg" data-src-retina="assets/img/profiles/d2x.jpg" width="35" height="35">
+                                    </div>
+                                    <div class="message-wrapper">
+                                        <div class="heading">
+                                            MapControl - Enviou uma notificação
+                                        </div>
+                                        <div class="description">
+                                            Anúncio para todas as transportadoras
+                                        </div>
+                                        <div class="date pull-left">
+                                            Um minuto atrás
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!--Notificação de Alerta -->
+                                <div class="notification-messages danger">
+                                    <div class="iconholder">
+                                        <i class="fa fa-warning"></i>
+                                    </div>
+                                    <div class="message-wrapper">
+                                        <div class="heading">
+                                            Ocorreu uma excessão
+                                        </div>
+                                        <div class="description">
+                                            Entre em contato com o motorista João do Feijão
+                                        </div>
+                                        <div class="date pull-left">
+                                            2 minutos atrás
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!--Notificação de Sucesso -->
+                            <div class="notification-messages success">
+                                <div class="user-profile">
+                                    <img src="assets/img/profiles/h.jpg" alt="" data-src="assets/img/profiles/h.jpg" data-src-retina="assets/img/profiles/h2x.jpg" width="35" height="35">
+                                </div>
+                                <div class="message-wrapper">
+                                    <div class="heading">
+                                        MapControl
+                                    </div>
+                                    <div class="description">
+                                        150 novas mensagens não lidas na sua caixa de entrada
+                                    </div>
+                                    <div class="date pull-left">
+                                        Uma hora atrás
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <ul class="nav quick-section ">
+                    <li class="quicklinks">
+                        <a data-toggle="dropdown" class="dropdown-toggle  pull-right " href="#" id="user-options">
+                            <div class="iconset top-settings-dark "></div>
+                        </a>
+                        <ul class="dropdown-menu  pull-right" role="menu" aria-labelledby="user-options">
+                            <li>
+                                <a href="user-profile.html">Minha Conta</a>
+                            </li>
+                            <li>
+                                <a href="calender.html">Agenda de Transporte</a>
+                            </li>
+                            <li>
+                                <a href="email.html">Caixa de Entrada&nbsp;&nbsp;
+                                    <span class="badge badge-important animated bounceIn">2</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="login.html">
+                                    <i class="fa fa-power-off"></i>&nbsp;&nbsp;Fazer Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- END CHAT TOGGLER -->
+        </div>
+        <!-- END TOP NAVIGATION MENU -->
+    </div>
+    <!-- END TOP NAVIGATION BAR -->
+
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container row">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar" id="main-menu">
+            <!-- BEGIN MINI-PROFILE -->
+            <div class="user-info-wrapper">
+                <div class="profile-wrapper">
+                    <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" width="69" height="69" />
+                </div>
+                <div class="user-info">
+                    <div class="greeting">Bem Vindo!</div>
+                    <div class="username">Victor
+                        <span class="semi-bold">Sanches</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END MINI-PROFILE -->
+
+            <!-- BEGIN SIDEBAR MENU -->
+            <p class="menu-title">NAVEGAÇÃO
+                <span class="pull-right">
+                    <a href="javascript:;">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                </span>
+            </p>
+            <ul>
+                <li class=" ">
+                    <a href="index.html">
+                        <i class="icon-custom-home"></i>
+                        <span class="title">Dashboard</span>
+                        <span class="selected"></span>
+                        <span class="badge badge-important pull-right">3</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="transportes.html">
+                        <i class="fa fa-arrows-h"></i>
+                        <span class="title">Transportes</span>
+                        <span class=" badge badge-important pull-right "></span>
+                    </a>
+                </li>
+                <li class="start active">
+                    <a href="cargas.html">
+                        <i class="fa fa-archive"></i>
+                        <span class="title">Cargas</span>
+                        <span class=" badge badge-disable pull-right ">203</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="motoristas.html">
+                        <i class="fa fa-truck"></i>
+                        <span class="title">Motoristas</span>
+                        <span class=" badge badge-important pull-right "></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="veiculos.html">
+                        <i class="fa fa-truck"></i>
+                        <span class="title">Veículos</span>
+                       <span class=" badge badge-important pull-right "></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="side-bar-widgets">
+                <p class="menu-title">
+                    IMPORTAR DADOS
+                </p>
+                <ul class="folders">
+                    <li>
+                        <a href="#">
+                            <div class="status-icon green"></div>Importar Índices</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="status-icon green"></div>Importar Motoristas</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="status-icon green"></div>Importar Veículos</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="status-icon green"></div>Importar Transportes</a>
+                    </li>
+                    <li class="folder-input" style="display:none">
+                        <input type="text" placeholder="Name of folder" class="no-boarder folder-name" name="">
+                    </li>
+                </ul>
+                <p class="menu-title">TRANSPORTES EM ANDAMENTO</p>
+                <div class="status-widget">
+                    <div class="status-widget-wrapper">
+                        <div class="title">
+                            <a href="#" style="color:white;">Bate e Volta</a>
+                        </div>
+                        <p style="margin:0px">Motorista: Pedro Alves</p>
+                        <p>Previsão: 2 horas restantes</p>
+                        <div class="row" style="position: relative;margin-top: -7px;">
+                            <div class="progress transparent progress-small no-radius no-margin col-lg-8 pull-left" style="margin-left: 15px !important;padding-left:0px;padding-right:0px;position: relative;top: 7px;">
+                                <div class="progress-bar progress-bar-success animate-progress-bar" data-percentage="89%"></div>
+                            </div>
+                            <div class="pull-right col-lg-3">
+                                <div class="details-status">
+                                    <span class="animate-number" data-value="89" data-animation-duration="560">0</span>%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-widget-wrapper">
+                        <div class="title">
+                            <a href="#" style="color:white;">Mercadinho Dois Irmãos</a>
+                        </div>
+                        <p style="margin:0px">Motorista: João Victor</p>
+                        <p>Previsão: 3 horas restantes</p>
+                        <div class="row" style="position: relative;margin-top: -7px;">
+                            <div class="progress transparent progress-small no-radius no-margin col-lg-8 pull-left" style="margin-left: 15px !important;padding-left:0px;padding-right:0px;position: relative;top: 7px;">
+                                <div class="progress-bar progress-bar-success animate-progress-bar" data-percentage="53"></div>
+                            </div>
+                            <div class="pull-right col-lg-3">
+                                <div class="details-status">
+                                    <span class="animate-number" data-value="53" data-animation-duration="560">0</span>%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!-- END SIDEBAR MENU -->
+        </div>
+        <!-- BEGIN PAGE CONTAINER-->
+        <div class="page-content">
+            <div class="content">
+                <div class="page-title">
+                    <h3>Cargas</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="grid simple ">
+                            <div class="grid-title no-border">
+                                <h4>Acompanhamento de <span class="semi-bold">Cargas</span></h4>
+                                <div class="tools"> <a href="javascript:;" class="collapse"></a>
+                                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                </div>
+                            </div>
+                            <div class="grid-body no-border">
+                                  <h3>Cargas  <span class="semi-bold">Próprias</span></h3>
+                                    <table class="table no-more-tables">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:1%">
+                                                    <div class="checkbox check-default">
+                                                        <input id="checkbox10" type="checkbox" value="1" class="checkall">
+                                                        <label for="checkbox10"></label>
+                                                    </div>
+                                                </th>
+                                                <th>id</th>
+                                                <th>Preço</th>
+                                                <th>Peso Líquido</th>
+                                                <th>Peso Bruto</th>
+                                                <th>Volume</th>
+                                                <th>Endereço de Entrega</th>
+                                                <th>Pacote Correspondente</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                     <div class="checkbox check-default">
+                                                        <input id="checkbox11" type="checkbox" value="1">
+                                                        <label for="checkbox11"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">
+                                                    <span class="muted">R$20,00</span>
+                                                </td>
+                                                <td>
+                                                    <span class="muted">2kg</span>
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    <span class="muted">2,3kg</span>
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    <span class="muted">1m³</span>
+                                                </td>
+                                                 <td class="v-align-middle">
+                                                    <span class="muted">Av. Presidente Vargas 340 sl 201</span>
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    <span class="muted">????????????</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PAGE -->
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+    </div>
+
+    <!-- BEGIN CORE JS FRAMEWORK-->
+    <script src="assets/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/boostrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/breakpoints.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+    <!-- END CORE JS FRAMEWORK -->
+
+    <!-- BEGIN PAGE LEVEL JS -->
+    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-block-ui/jqueryblockui.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap-select2/select2.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-ricksaw-chart/js/raphael-min.js"></script>
+    <script src="assets/plugins/jquery-ricksaw-chart/js/d3.v2.js"></script>
+    <script src="assets/plugins/jquery-ricksaw-chart/js/rickshaw.min.js"></script>
+    <script src="assets/plugins/jquery-morris-chart/js/morris.min.js"></script>
+    <script src="assets/plugins/jquery-easy-pie-chart/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/plugins/jquery-slider/jquery.sidr.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-jvectormap/js/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-jvectormap/js/jquery-jvectormap-us-lcc-en.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-sparkline/jquery-sparkline.js"></script>
+    <script src="assets/plugins/jquery-flot/jquery.flot.min.js"></script>
+    <script src="assets/plugins/jquery-flot/jquery.flot.time.min.js"></script>
+    <script src="assets/plugins/jquery-flot/jquery.flot.animator.min.js"></script>
+
+    <script src="assets/plugins/skycons/skycons.js"></script>
+    <!-- END PAGE LEVEL PLUGINS   -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- PAGE JS -->
+    <script src="assets/js/dashboard.js" type="text/javascript"></script>
+    <script src="assets/js/google_maps.js" type="text/javascript"></script>
+    <!-- BEGIN CORE TEMPLATE JS -->
+    <script src="assets/js/core.js" type="text/javascript"></script>
+    <script src="assets/js/chat.js" type="text/javascript"></script>
+    <script src="assets/js/index_charts.js" type="text/javascript"></script>
+    <script src="assets/js/demo.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.knob.modified.js" type="text/javascript"></script>                
+    <script src="assets/js/retina.js" type="text/javascript"></script>            
+     <script src="assets/js/custom.js" type="text/javascript"></script> 
+    <!-- END CORE TEMPLATE JS -->
+
+
+</body>
+
+</html>

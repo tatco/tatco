@@ -1,0 +1,683 @@
+<html><head>
+<meta content="text/html;charset=UTF-8" http-equiv="content-type">
+<meta charset="utf-8">
+<title>TATCO - Gestão de Transportadoras</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta name="TATCO - Gestão de Transportadoras" content="">
+<meta name="MLN Consultoria &amp; Ubiq42 Projetos" content="">
+
+<!-- FAVICON -->
+<link href="favicon3.ico" type="image/ico" rel="icon">
+	  
+<!-- BEGIN PLUGIN CSS -->
+<link media="screen" type="text/css" rel="stylesheet" href="assets/plugins/pace/pace-theme-flash.css">
+<link type="text/css" rel="stylesheet" href="assets/plugins/bootstrap-tag/bootstrap-tagsinput.css">
+<link type="text/css" rel="stylesheet" href="assets/plugins/dropzone/css/dropzone.css">
+<link type="text/css" rel="stylesheet" href="assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css">
+<link type="text/css" rel="stylesheet" href="assets/plugins/bootstrap-datepicker/css/datepicker.css">
+<link type="text/css" rel="stylesheet" href="assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.css">
+<link type="text/css" rel="stylesheet" href="assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css">
+<link media="screen" type="text/css" rel="stylesheet" href="assets/plugins/ios-switch/ios7-switch.css">
+<link media="screen" type="text/css" rel="stylesheet" href="assets/plugins/bootstrap-select2/select2.css">
+<link media="screen" type="text/css" rel="stylesheet" href="assets/plugins/jquery-slider/css/jquery.sidr.light.css">
+<link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen">
+<!-- END PLUGIN CSS -->
+
+<!-- BEGIN CORE CSS FRAMEWORK -->
+<link type="text/css" rel="stylesheet" href="assets/plugins/boostrapv3/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="assets/plugins/boostrapv3/css/bootstrap-theme.min.css">
+<link type="text/css" rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+<link type="text/css" rel="stylesheet" href="assets/css/animate.min.css">
+<!-- END CORE CSS FRAMEWORK -->
+
+<!-- BEGIN CSS TEMPLATE -->
+<link type="text/css" rel="stylesheet" href="assets/css/style.css">
+<link type="text/css" rel="stylesheet" href="assets/css/responsive.css">
+<link type="text/css" rel="stylesheet" href="assets/css/custom-icon-set.css">
+<!-- END CSS TEMPLATE -->
+
+<link type="text/css" rel="stylesheet" href="assets/plugins/boostrap-slider/css/slider.css">
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+<body class=" breakpoint-1024 pace-done">
+<div class="pace  pace-inactive"><div class="pace-progress" style="width: 100%;" data-progress-text="100%" data-progress="99">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div>
+</div>
+<!-- BEGIN HEADER -->
+<div class="header navbar navbar-inverse "> 
+  <!-- BEGIN TOP NAVIGATION BAR -->
+  <div class="navbar-inner">
+	<div class="header-seperation"> 
+		<ul style="display:none" id="main-menu-toggle-wrapper" class="nav pull-left notifcation-center">	
+		 <li class="dropdown"> <a class="" href="#main-menu" id="main-menu-toggle"> <div class="iconset top-menu-toggle-white"></div> </a> </li>		 
+		</ul>
+      <!-- BEGIN LOGO -->	
+      <a href="index.html"><img data-src-retina="assets/img/logo2x.png" data-src="assets/img/logo.png" alt="" style="margin:3px auto auto 15px;" class="logo" src="assets/img/logo.png"></a>
+      <!-- END LOGO --> 
+      <ul class="nav pull-right notifcation-center">	
+        <li id="header_task_bar" class="dropdown"> <a data-toggle="" class="dropdown-toggle active" href="index.html"> <div class="iconset top-home"></div> </a> </li>
+        <li id="header_inbox_bar" class="dropdown"> <a class="dropdown-toggle" href="meusavisos.html"> <div class="iconset top-messages"></div>  <span id="msgs-badge" class="badge animated bounceIn">2</span> </a></li>
+		<li style="display:none" id="portrait-chat-toggler" class="dropdown"> <a class="chat-menu-toggle" href="#sidr"> <div class="iconset top-chat-white "></div> </a> </li>        
+      </ul>
+      </div>
+      <!-- END RESPONSIVE MENU TOGGLER --> 
+      <div class="header-quick-nav"> 
+      <!-- BEGIN TOP NAVIGATION MENU -->
+	  <div class="pull-left"> 
+        <ul class="nav quick-section">
+          <li class="quicklinks"> <a id="layout-condensed-toggle" class="" href="#">
+            <div class="iconset top-menu-toggle-dark"></div>
+            </a> </li>
+        </ul>
+        <ul class="nav quick-section">
+          <li class="quicklinks"> <a class="" href="#">
+            <div class="iconset top-reload"></div>
+            </a> </li>
+          <li class="quicklinks"> <span class="h-seperate"></span></li>
+          <li class="quicklinks"> <a class="" href="#">
+            <div class="iconset top-tiles"></div>
+            </a> </li>
+			<li class="search-form">
+				&nbsp;&nbsp;<img data-src-retina="assets/img/logo-tatco.png" data-src="assets/img/logo-tatco.png" alt="" src="assets/img/logo-tatco.png">
+			</li>
+		</ul>
+	  </div>
+	 <!-- END TOP NAVIGATION MENU -->
+	 <!-- BEGIN CHAT TOGGLER -->
+      <div class="pull-right"> 
+		<div class="chat-toggler">	
+				<a data-original-title="Comunicação" data-toggle="dropdown" data-content="" data-placement="bottom" id="my-task-list" class="dropdown-toggle" href="#">
+					<div class="user-details"> 
+						<div class="username">
+							<span class="badge badge-important">3</span> 
+							Márcio <span class="bold">Neves</span>									
+						</div>						
+					</div> 
+					<div class="iconset top-down-arrow"></div>
+				</a>	
+				<div style="display:none" id="notification-list">
+					<div style="width:300px">
+						  <div class="notification-messages info">
+									<div class="user-profile">
+										<img width="35" height="35" data-src-retina="assets/img/profiles/d2x.jpg" data-src="assets/img/profiles/d.jpg" alt="" src="assets/img/profiles/d.jpg">
+									</div>
+									<div class="message-wrapper">
+										<div class="heading">
+											Marcelo Freiser - Recado para você
+										</div>
+										<div class="description">
+											Reunião agendada para dia 12/03
+										</div>
+										<div class="date pull-left">
+										Um minuto atrás
+										</div>										
+									</div>
+									<div class="clearfix"></div>									
+								</div>	
+							<div class="notification-messages danger">
+								<div class="iconholder">
+									<i class="icon-warning-sign"></i>
+								</div>
+								<div class="message-wrapper">
+									<div class="heading">
+										Vale Cargas
+									</div>
+									<div class="description">
+										O Tempo de Rota está crítico
+									</div>
+									<div class="date pull-left">
+									2 minutos atrás
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>	
+							<div class="notification-messages success">
+								<div class="user-profile">
+									<img width="35" height="35" data-src-retina="assets/img/profiles/h2x.jpg" data-src="assets/img/profiles/h.jpg" alt="" src="assets/img/profiles/h.jpg">
+								</div>
+								<div class="message-wrapper">
+									<div class="heading">
+										Simone - Comercial
+									</div>
+									<div class="description">
+										3 novas transportadoras foram agregadas
+									</div>
+									<div class="date pull-left">
+									Uma hora atrás
+									</div>									
+								</div>
+								<div class="clearfix"></div>
+							</div>							
+						</div>				
+				</div>
+      			
+			</div>
+		 <ul class="nav quick-section ">
+			<li class="quicklinks"> 
+				<a id="user-options" href="#" class="dropdown-toggle  pull-right " data-toggle="dropdown">						
+					<div class="iconset top-settings-dark "></div> 	
+				</a>
+				<ul aria-labelledby="user-options" role="menu" class="dropdown-menu  pull-right">
+                  <li><a href="user-profile.html"> Meus Dados</a>
+                  </li>
+                  <li><a href="calender.html">Minha Agenda</a>
+                  </li>
+                  <li><a href="meusavisos.html"> Meus Avisos&nbsp;&nbsp;<span class="badge badge-important animated bounceIn">2</span></a>
+                  </li>
+                  <li class="divider"></li>                
+                  <li><a href="login.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+               </ul>
+			</li> 
+
+		</ul>
+      </div>
+	  
+	<!-- END CHAT TOGGLER -->
+      </div> 
+      <!-- END TOP NAVIGATION MENU --> 
+   
+  </div>
+  <!-- END TOP NAVIGATION BAR --> 
+</div>
+
+<!-- END HEADER --> 
+<!-- BEGIN CONTAINER -->
+<div class="page-container row"> 
+  <!-- BEGIN SIDEBAR -->
+  <div id="main-menu" class="page-sidebar"> 
+  <!-- BEGIN MINI-PROFILE -->
+   <div style="margin:0;" class="user-info-wrapper">	
+	<div style="margin-top:0; width:247px;" class="profile-wrapper">
+		<img data-src-retina="assets/img/profiles/avatar2x.jpg" data-src="assets/img/profiles/avatar.jpg" alt="" src="assets/img/profiles/avatar.jpg">
+ 	</div>
+   </div>
+  <!-- END MINI-PROFILE -->
+   
+   <!-- BEGIN SIDEBAR MENU -->	
+	<p class="menu-title">MENU <span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
+    <ul>	
+      <li class="start active "> <a href="index.html"> <i class="icon-custom-home"></i> <span class="title">Dashboard</span> <span class="selected"></span> <span class="badge badge-important pull-right">5</span></a> </li>
+	  <li class=""> <a href="avisos.html"> <i class="fa fa-envelope"></i> <span class="title">Comunicação</span>  <span class=" badge badge-disable pull-right ">15</span></a> </li>      
+	  <li class=""> <a href="usuarios.html"> <i class="fa fa-user"></i>  <span class="title">Cadastro de Usuários</span></a></li>
+      <li class=""> <a href="javascript:;"> <i class="fa fa-edit"></i> <span class="title">Cadastro Geral</span> <span class="arrow open"></span> </a>
+	  <ul class="sub-menu">
+		  <li> <a href="frota.html">Frota</a> </li>
+		  <li> <a href="pessoal.html">Pessoal</a> </li>
+        </ul>
+      </li>
+	  <li class=""> <a href="avaliacao.html"> <i class="fa fa-check-square-o"></i> <span class="title">Autoavaliação</span></a></li>
+      <li class=""> <a href="input.html"> <i class="fa fa-info-circle"></i> <span class="title">Input de Informações</span> </a></li>
+      <li class=""> <a href="remuneracao.html"> <i class="fa fa-random"></i> <span class="title">Remuneração Variável</span> </a></li>
+      <li class=""> <a href="javascript:;"> <i class="icon-custom-map"></i> <span class="title">Indicadores</span> <span class="arrow open"></span> </a>
+        <ul class="sub-menu">
+          <li> <a href="rhssma.html"> RH &amp; SSMA </a> </li>
+          <li> <a href="produtividade.html"> Produtividade </a> </li>
+          <li> <a href="financeiros.html"> Financeiros </a> </li>
+        </ul>
+      </li>
+      <li class=""> <a href="gvista.html"> <i class="icon-custom-thumb"></i> <span class="title">Gestão à Vista</span> </a> </li>    
+	  <li class=""> <a href="categorias.html"> <i class="fa fa-tasks"></i> <span class="title">Categorias GIF</span></a></li>
+    </ul>
+
+	<a class="scrollup" href="#">Scroll</a>
+	<div class="clearfix"></div>
+    <!-- END SIDEBAR MENU --> 
+  </div>
+  <div class="footer-widget">		
+
+	<div class="pull-right">
+
+	<a href="lockscreen.html"><i class="fa fa-power-off"></i></a></div>
+  </div>
+  <!-- END SIDEBAR --> 
+  <!-- BEGIN PAGE CONTAINER-->
+  <div class="page-content">
+    <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <div class="modal hide" id="portlet-config">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+        <h3>Configurar Dispositivo</h3>
+      </div>
+      <div class="modal-body"> Coloque aqui o formulário de Configuração do Dispositivo </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="content">
+	  
+
+      <ul class="breadcrumb">
+        <li>
+          VOCÊ ESTÁ AQUI&nbsp;&nbsp;
+        </li>
+		<li>
+			&nbsp;&nbsp; Gestão à Vista &nbsp;&nbsp;
+        </li>
+        <!-- <li><a class="active" href="#">Painel</a> </li> --> 
+      </ul>
+	  
+	  <div class="row">
+  	  
+			  <div class="page-title col-md-6"> <i class="icon-custom-thumb"></i>
+				<h3>PAINEL - <span class="semi-bold">Gestão à Vista</span></h3>
+			  </div>
+			  
+			  <div class="col-md-6">
+					<select class="form-control select2 select2-offscreen" id="transp" tabindex="-1">
+						<optgroup label="Norte & Nordeste">
+							<option value="100">MILLANO TRANSPORTES</option>
+							<option value="101">LIRABEL</option>
+						</optgroup>
+						<optgroup label="Centro Oeste">
+							<option value="200">ECOEMA TRANSPORTES</option>
+							<option value="201">MARIANA TRANSPORTES</option>
+							<option value="202">DANTAS E COSTA</option>
+							<option value="203">MATOGROSSENSE</option>
+						</optgroup>
+						<optgroup label="Sudeste">
+							<option value="300">BRALOG</option>
+							<option value="301">CLOVIS NICANOR CAMARGO</option>
+							<option value="302">FRIOSERVICE</option>
+							<option value="303">ARCO LOGISTICA S.A</option>
+							<option value="304">DOIS IRMAOS TRANSPORTES</option>
+							<option value="305">FRAMENTO TRANSPORTES</option>
+							<option value="306">SUCUPIRA</option>
+							<option value="307">ZILLI TRANSPORTES</option>
+							<option value="308">ANJO BRANCO LOGISTICA</option>
+						 </optgroup>
+						<optgroup label="Sul">
+							<option value="400">BONO TRANSPORTES E LOGISTICA</option>
+							<option value="401">JF RIBEIRO TRANSPORTES</option>
+							<option value="402">DOM ANGELO TRANSPORTES</option>
+							<option value="403">F.R. GUIMARAES</option>
+						</optgroup>
+					</select>
+			  </div>
+
+	  </div>
+	  
+		<!-- INICIAR O CONTEÚDO DA PÁGINA --> 
+		
+	  <div class="row">
+	  
+			<div class="col-md-4">
+				<div class="grid simple">
+					<div class="grid-title no-border">
+					  <h4>Painel de <span class="semi-bold">  </span></h4> 
+					  
+					  <h4>Monitoramento <span class="semi-bold">GIF</span></h4> 
+					  
+					  <div class="tools"> <a class="collapse" href="javascript:;"></a>  </div>
+					</div>
+					<div class="grid-body no-border">					
+						
+						<h4>
+							
+						<span class="semi-bold">    </span>
+						</h4>
+						<p>    </p>
+						<br>
+						<div style="height: 100px; padding: 0px; position: relative;" id="placeholder-bar-chart"><canvas class="base" width="457" height="100">
+						</canvas><canvas class="overlay" width="457" height="100" style="position: absolute; left: 0px; top: 0px;"></canvas>
+						<div style="font-size:smaller" class="tickLabels">
+						<div style="color:#545454" class="xAxis x1Axis"></div>
+						</div>
+						<div class="legend">
+						<div style="position: absolute; width: 61px; height: 88px; top: 9px; right: 9px; background-color: rgb(255, 255, 255); opacity: 0.85;"></div>
+						<table style="position:absolute;top:9px;right:9px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div>
+						</td><td class="legendLabel">   </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						
+						</div></td><td class="legendLabel">    </td></tr></tbody></table></div></div>					
+					 </div>
+				</div>
+		   </div>
+
+
+			<div class="col-md-4">
+				<div class="grid simple">
+					<div class="grid-title no-border">
+					  <h4>% de <span class="semi-bold">  </span></h4> 
+					  
+					  <h4>Absenteísmo <span class="semi-bold">GIF</span></h4> 
+					  
+					  <div class="tools"> <a class="collapse" href="javascript:;"></a>  </div>
+					</div>
+					<div class="grid-body no-border">					
+						
+						<h4>
+							
+						<span class="semi-bold">    </span>
+						</h4>
+						<p>    </p>
+						<br>
+						<div style="height: 100px; padding: 0px; position: relative;" id="placeholder-bar-chart"><canvas class="base" width="457" height="100">
+						</canvas><canvas class="overlay" width="457" height="100" style="position: absolute; left: 0px; top: 0px;"></canvas>
+						<div style="font-size:smaller" class="tickLabels">
+						<div style="color:#545454" class="xAxis x1Axis"></div>
+						</div>
+						<div class="legend">
+						<div style="position: absolute; width: 61px; height: 88px; top: 9px; right: 9px; background-color: rgb(255, 255, 255); opacity: 0.85;"></div>
+						<table style="position:absolute;top:9px;right:9px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div>
+						</td><td class="legendLabel">   </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						
+						</div></td><td class="legendLabel">    </td></tr></tbody></table></div></div>					
+					 </div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+			<!-- LOGO GIF -->
+					<img style="margin:auto; padding-top:40px;padding-left:20px;" data-src-retina="assets/img/logo-gif.png" data-src="assets/img/logo-gif.png" alt="" src="assets/img/logo-gif.png">
+			</div>
+		
+	  </div>
+	
+	  <div class="row">
+	  
+			<div class="col-md-4">
+				<div class="grid simple">
+					<div class="grid-title no-border">
+					  <h4>% de <span class="semi-bold">  </span></h4> 
+					  
+					  <h4>Acidentes <span class="semi-bold">  </span></h4> 
+					  
+					  <div class="tools"> <a class="collapse" href="javascript:;"></a>  </div>
+					</div>
+					<div class="grid-body no-border">					
+						
+						<h4>
+							
+						<span class="semi-bold">    </span>
+						</h4>
+						<p>    </p>
+						<br>
+						<div style="height: 100px; padding: 0px; position: relative;" id="placeholder-bar-chart"><canvas class="base" width="457" height="100">
+						</canvas><canvas class="overlay" width="457" height="100" style="position: absolute; left: 0px; top: 0px;"></canvas>
+						<div style="font-size:smaller" class="tickLabels">
+						<div style="color:#545454" class="xAxis x1Axis"></div>
+						</div>
+						<div class="legend">
+						<div style="position: absolute; width: 61px; height: 88px; top: 9px; right: 9px; background-color: rgb(255, 255, 255); opacity: 0.85;"></div>
+						<table style="position:absolute;top:9px;right:9px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div>
+						</td><td class="legendLabel">   </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						
+						</div></td><td class="legendLabel">    </td></tr></tbody></table></div></div>					
+					 </div>
+				</div>
+		   </div>   
+		
+		
+			<div class="col-md-4">
+				<div class="grid simple">
+					<div class="grid-title no-border">
+					  <h4>Consumo <span class="semi-bold">  </span></h4> 
+					  
+					  <h4>(km/l) <span class="semi-bold">    </span></h4> 
+					  
+					  <div class="tools"> <a class="collapse" href="javascript:;"></a>  </div>
+					</div>
+					<div class="grid-body no-border">					
+						
+						<h4>
+							
+						<span class="semi-bold">    </span>
+						</h4>
+						<p>    </p>
+						<br>
+						<div style="height: 100px; padding: 0px; position: relative;" id="placeholder-bar-chart"><canvas class="base" width="457" height="100">
+						</canvas><canvas class="overlay" width="457" height="100" style="position: absolute; left: 0px; top: 0px;"></canvas>
+						<div style="font-size:smaller" class="tickLabels">
+						<div style="color:#545454" class="xAxis x1Axis"></div>
+						</div>
+						<div class="legend">
+						<div style="position: absolute; width: 61px; height: 88px; top: 9px; right: 9px; background-color: rgb(255, 255, 255); opacity: 0.85;"></div>
+						<table style="position:absolute;top:9px;right:9px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div>
+						</td><td class="legendLabel">   </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						
+						</div></td><td class="legendLabel">    </td></tr></tbody></table></div></div>					
+					 </div>
+				</div>
+		   </div>
+
+			 <div class="col-md-4">
+				<div class="grid simple">
+					<div class="grid-title no-border">
+					  <h4>% de <span class="semi-bold">  </span></h4> 
+					  
+					  <h4>Temperatura <span class="semi-bold">   </span></h4> 
+					  
+					  <div class="tools"> <a class="collapse" href="javascript:;"></a>  </div>
+					</div>
+					<div class="grid-body no-border">					
+						
+						<h4>
+							
+						<span class="semi-bold">    </span>
+						</h4>
+						<p>    </p>
+						<br>
+						<div style="height: 100px; padding: 0px; position: relative;" id="placeholder-bar-chart"><canvas class="base" width="457" height="100">
+						</canvas><canvas class="overlay" width="457" height="100" style="position: absolute; left: 0px; top: 0px;"></canvas>
+						<div style="font-size:smaller" class="tickLabels">
+						<div style="color:#545454" class="xAxis x1Axis"></div>
+						</div>
+						<div class="legend">
+						<div style="position: absolute; width: 61px; height: 88px; top: 9px; right: 9px; background-color: rgb(255, 255, 255); opacity: 0.85;"></div>
+						<table style="position:absolute;top:9px;right:9px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div>
+						</td><td class="legendLabel">   </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						
+						</div></td><td class="legendLabel">    </td></tr></tbody></table></div></div>					
+					 </div>
+				</div>
+		   </div>
+
+      </div>
+   
+   
+	  <div class="row">
+
+			<div class="col-md-4">
+				<div class="grid simple">
+					<div class="grid-title no-border">
+					  <h4>% de <span class="semi-bold">  </span></h4> 
+					  
+					  <h4>Retorno <span class="semi-bold">   </span></h4> 
+					  
+					  <div class="tools"> <a class="collapse" href="javascript:;"></a>  </div>
+					</div>
+					<div class="grid-body no-border">					
+						
+						<h4>
+							
+						<span class="semi-bold">    </span>
+						</h4>
+						<p>    </p>
+						<br>
+						<div style="height: 100px; padding: 0px; position: relative;" id="placeholder-bar-chart"><canvas class="base" width="457" height="100">
+						</canvas><canvas class="overlay" width="457" height="100" style="position: absolute; left: 0px; top: 0px;"></canvas>
+						<div style="font-size:smaller" class="tickLabels">
+						<div style="color:#545454" class="xAxis x1Axis"></div>
+						</div>
+						<div class="legend">
+						<div style="position: absolute; width: 61px; height: 88px; top: 9px; right: 9px; background-color: rgb(255, 255, 255); opacity: 0.85;"></div>
+						<table style="position:absolute;top:9px;right:9px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div>
+						</td><td class="legendLabel">   </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						
+						</div></td><td class="legendLabel">    </td></tr></tbody></table></div></div>					
+					 </div>
+				</div>
+		   </div>
+
+   
+			<div class="col-md-4">
+				<div class="grid simple">
+					<div class="grid-title no-border">
+					  <h4>Tempo <span class="semi-bold">  </span></h4> 
+					  
+					  <h4>em Rota <span class="semi-bold">   </span></h4> 
+					  
+					  <div class="tools"> <a class="collapse" href="javascript:;"></a>  </div>
+					</div>
+					<div class="grid-body no-border">					
+						
+						<h4>
+							
+						<span class="semi-bold">    </span>
+						</h4>
+						<p>    </p>
+						<br>
+						<div style="height: 100px; padding: 0px; position: relative;" id="placeholder-bar-chart"><canvas class="base" width="457" height="100">
+						</canvas><canvas class="overlay" width="457" height="100" style="position: absolute; left: 0px; top: 0px;"></canvas>
+						<div style="font-size:smaller" class="tickLabels">
+						<div style="color:#545454" class="xAxis x1Axis"></div>
+						</div>
+						<div class="legend">
+						<div style="position: absolute; width: 61px; height: 88px; top: 9px; right: 9px; background-color: rgb(255, 255, 255); opacity: 0.85;"></div>
+						<table style="position:absolute;top:9px;right:9px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div>
+						</td><td class="legendLabel">   </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						
+						</div></td><td class="legendLabel">    </td></tr></tbody></table></div></div>					
+					 </div>
+				</div>
+		   </div>
+
+
+			<div class="col-md-4">
+				<div class="grid simple">
+					<div class="grid-title no-border">
+					  <h4>% de <span class="semi-bold">  </span></h4> 
+					  
+					  <h4>Autenticação <span class="semi-bold">   </span></h4> 
+					  
+					  <div class="tools"> <a class="collapse" href="javascript:;"></a>  </div>
+					</div>
+					<div class="grid-body no-border">					
+						
+						<h4>
+							
+						<span class="semi-bold">    </span>
+						</h4>
+						<p>    </p>
+						<br>
+						<div style="height: 100px; padding: 0px; position: relative;" id="placeholder-bar-chart"><canvas class="base" width="457" height="100">
+						</canvas><canvas class="overlay" width="457" height="100" style="position: absolute; left: 0px; top: 0px;"></canvas>
+						<div style="font-size:smaller" class="tickLabels">
+						<div style="color:#545454" class="xAxis x1Axis"></div>
+						</div>
+						<div class="legend">
+						<div style="position: absolute; width: 61px; height: 88px; top: 9px; right: 9px; background-color: rgb(255, 255, 255); opacity: 0.85;"></div>
+						<table style="position:absolute;top:9px;right:9px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div>
+						</td><td class="legendLabel">   </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox">
+						<div style="border:1px solid #ccc;padding:1px">
+						</div></td><td class="legendLabel">    </td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px">
+						
+						</div></td><td class="legendLabel">    </td></tr></tbody></table></div></div>					
+					 </div>
+				</div>
+		   </div>
+
+      </div>
+		
+		
+		<!-- FINALIZAR O CONTEÚDO DA PÁGINA --> 
+	  
+      <!-- END PAGE -->
+	</div>
+  </div>
+</div>
+
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<!-- END FOOTER -->
+<!-- BEGIN CORE JS FRAMEWORK-->
+<script type="text/javascript" src="assets/plugins/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/plugins/breakpoints.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-unveil/jquery.unveil.min.js"></script>
+
+<!-- END CORE JS FRAMEWORK -->
+<script type="text/javascript" src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-slider/jquery.sidr.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script> 
+<script src="assets/plugins/bootstrap-select2/select2.min.js" type="text/javascript"></script>
+
+<!-- END CORE PLUGINS -->
+
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="assets/plugins/pace/pace.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-block-ui/jqueryblockui.js"></script> 
+<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-inputmask/jquery.inputmask.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
+<script type="text/javascript" src="assets/plugins/ios-switch/ios7-switch.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js"></script>
+<script type="text/javascript" src="assets/plugins/dropzone/dropzone.min.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="assets/js/form_elements.js"></script>
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script type="text/javascript" src="assets/js/core.js"></script>
+<script type="text/javascript" src="assets/js/chat.js"></script> 
+<script type="text/javascript" src="assets/js/demo.js"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+
+<script>
+	$(document).ready(function() {	
+		
+		  $("#transp").select2();
+		  
+	});
+</script>
+
+<!-- END JAVASCRIPTS -->
+
+<div id="sidr" class="sidr right" style="">
+</div>
+</body>
+</html>
